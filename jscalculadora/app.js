@@ -40,15 +40,40 @@ if(isNaN(resultado)){
 
 
   
-  /*function sumar(){
-    document.getElementById("resultados").innerHTML= "asd";
-    }
-    function obtenerNumero(){
-        let botonN = document.getElementById("numeroo").value;
-        document.getElementById("resultados").innerHTML += botonN ;
+  function o1(){
+        document.getElementById("resultados").innerHTML += 1 ;
 
+  }
+  function o2(){
+    document.getElementById("resultados").innerHTML += 2 ;
+    
+}
+let contadorclick = 0;
+function sumar2(){
+    contadorclick++;
+    let screen =  document.getElementById("resultados").innerHTML;
+    console.log(screen);
+    if(contadorclick == 0){
+        op1 = screen;
+        console.log(op1+"a");
     }
-    function sumar(){
+    else if(contadorclick == 2){
+        let screen =  document.getElementById("resultados").innerHTML;
+        console.log(screen);
+        op2 = screen;
+        console.log(op2 +"b");
+    }
+    else{ "f"}
+    }
+    
+
+
+function igual(){
+    let igual = op1 + op2;
+    document.getElementById("resultados").innerHTML = igual;
+   console.log(igual);
+}
+    /*function sumar(){
         let forma1 = document.getElementById('resultados');
         let operando1 =forma1["1"];
         let operando2 = 3;
@@ -61,3 +86,7 @@ if(isNaN(resultado)){
             console.log(`resultado: ${resultado}`);
         }
         */
+            /*function screen(){
+                let screen =  document.getElementById("resultados").innerHTML;
+                console.log(screen);
+            }*/
