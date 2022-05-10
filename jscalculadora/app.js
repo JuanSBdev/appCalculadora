@@ -38,7 +38,6 @@ if(isNaN(resultado)){
 
 
 
-
   
   function o1(){
         document.getElementById("resultados").innerHTML += 1 ;
@@ -49,19 +48,25 @@ if(isNaN(resultado)){
     
 }
 let contadorclick = 0;
+let op1 = "";
+let op2= "";
+
 function sumar2(){
     contadorclick++;
     let screen =  document.getElementById("resultados").innerHTML;
     console.log(screen);
-    if(contadorclick == 0){
-        op1 = screen;
-        console.log(op1+"a");
+    if(contadorclick == 1){
+            op1 = screen;
+            console.log(op1);
+    
     }
-    else if(contadorclick == 2){
+    else if(contadorclick === 2 ){
         let screen =  document.getElementById("resultados").innerHTML;
-        console.log(screen);
         op2 = screen;
-        console.log(op2 +"b");
+        console.log(op2);
+    }
+    else if(contadorclick >= 3){
+        alert ("Solo se permiten dos factores")
     }
     else{ "f"}
     }
@@ -69,8 +74,24 @@ function sumar2(){
 
 
 function igual(){
-    let igual = op1 + op2;
-    document.getElementById("resultados").innerHTML = igual;
+    let screen = document.getElementById("resultados").innerHTML;
+    console.log(parseInt(op1));
+    if(contadorclick == 1){
+        let screen =  document.getElementById("resultados").innerHTML;
+        op2 = screen;
+        let igual =   parseInt(op1) + parseInt(op2);
+        console.log(igual);
+
+    }
+    
+    else{
+        op2 = screen;
+        let igual =   parseInt(op1) + parseInt(op2);
+        console.log(igual);
+    };
+
+    let igual =   parseInt(op1) + parseInt(op2);
+    screen = igual;
    console.log(igual);
 }
     /*function sumar(){
