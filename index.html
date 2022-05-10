@@ -5,32 +5,66 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="styles.css">
     <title>Calcular</title>
   </head>
   <body>
-     <div class='container'>
-         <h1>Calculadora</h1>
-         <form id="forma" action="">
-             <div class="mb-3">
-                 <label for="operandoA">OperandoA1</label>
-                 <input type="number" class="form-control" placeholder="Elije un numero" id="operandoA">
-             </div>
-             <div class="mb-3">
-                <label for="operandoB">OperandoB1</label>
-                <input type="number" class="form-control" placeholder="elije otro numero para.." id="operandoB">
+    <div class="mobile container-fluid ">
+    <div class=''>
+      <h1>Calculadora Mobile</h1>
+        <form id="forma" class="container-fluid row row-cols-1 row-cols-md-2" action="">
+          <div class="col-12">
+            <h3 class="row justify-content-center"  >Operando A1</h3>
+              <input type="number" class=" form-control" placeholder="Elije un numero" id="operandoA">
+          </div>
+          <div class="col-12">
+                <h3 class="row justify-content-center">
+                  OperandoB1
+                </h3>   
+            <div class="row justify-content-center">
+              <input type="number" class="form-control" placeholder="elije otro .." id="operandoB">
             </div>
-            
+          </div>
+    </div>
         </form> <br>
-        <button type="submit" id="boton1" placeholder="" class="btn btn-primary mb-3 " onclick="sumar()">Sumar </button>
-        <button type="submit" id="boton2" class="btn btn-primary mb-3" onclick="multiplicar()" > Multiplicar</button>
-        <button type="submit" id="boton3" placeholder="" class="btn btn-primary mb-3 " onclick="dividir()">Dividir </button>
-        <button type="submit" id="boton4" placeholder="" class="btn btn-primary mb-3 " onclick="ver()">ver </button>
+        <div class="botones container-fluid row  justify-content-center mb-5">
+          
+          <button type="submit" id="boton1" placeholder="" class=" col btn btn-dark  mx-1" onclick="sumar()">Sumar </button>
+          <button type="submit" id="boton2" class=" col btn btn-secondary mx-1" onclick="multiplicar()" > Multiplicar</button>
+        <button type="submit" id="boton3" placeholder="" class="col btn btn-danger  mx-1 " onclick="dividir()">Dividir </button>
+        <button type="submit" id="boton4" placeholder="" class="col btn btn-warning  mx-3" onclick="ver()">ver </button>
+        
+      </div>
+  <div id="resultado" class="w-100" style="font-size:9rem; overflow: hidden;"></div>
 
-        <div id="resultado"></div>
+      <div class="calculos container-fluid col" id="calculos">
+        <div class=" row screen w-100 py-4 px-3 mx-2 my-4" id="resultados" >
+        </div>
+        <div class="buttons row row-cols-3 mx-1">
+          <input type="button" class="col-4 mx-1 my-1 btn btn-dark" value="1" id="numeroo" onclick="o1()">
+          <input type="button" class="col-3 mx-1 my-1 btn btn-dark" value="2" id="numeroo" onclick="o2()">
+          <input type="button" class="col-4 mx-1 my-1 btn btn-dark" value="3" id="numeroo" onclick="o3()">
+          <input type="button" class="col-4 mx-1 my-1 btn btn-dark" value="4" id="numeroo" onclick="o4()">
+          <input type="button" class="col-3 mx-1 my-1 btn btn-dark" value="5" id="numeroo" onclick="o5()">
+          <input type="button" class="col-4 mx-1 my-1 btn btn-dark" value="6" id="numeroo" onclick="o6()">
+          <input type="button" class="col-4 mx-1 my-1 btn btn-dark" value="7" id="numeroo" onclick="o7()">
+          <input type="button" class="col-3 mx-1 my-1 btn btn-dark" value="8" id="numeroo" onclick="o8()">
+          <input type="button" class="col-4 mx-1 my-1 btn btn-dark" value="9" id="numeroo" onclick="o9()">
+          <button class="col-2 mx-1 my-1 btn  btn-disabled">Dividir</button>
+          <input type="button" value="restar" class="btn btn-disabled col-2 my-1">
+          <input type="button" class="col-3 mx-1 my-1 btn btn-dark" value="0" id="numeroo" onclick="o0()">
+          <button class="col-4 mx-1 my-1 btn btn-warning" onclick="sumar2()" ondblclick="sumar3()">+</button>
+          <button class="col-4 mx-1 my-1 btn btn-danger" id="del" onclick="del()">del</button>
+          <button class="col-3 mx-1 my-1 btn  btn-disabled">*</button>
+          <button class="col-4 mx-1 my-1 btn btn-warning" onclick="igual()">=</button>
 
+        </div>
+      </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+              <script src="jscalculadora/app.js"></script>
+  </div>
+    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="jscalculadora/app.js"></script>
+     
   </body>
 </html>
