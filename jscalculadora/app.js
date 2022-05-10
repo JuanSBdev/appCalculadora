@@ -47,6 +47,38 @@ if(isNaN(resultado)){
     document.getElementById("resultados").innerHTML += 2 ;
     
 }
+function o3(){
+    document.getElementById("resultados").innerHTML += 3 ;
+    
+}
+function o4(){
+    document.getElementById("resultados").innerHTML += 4 ;
+    
+}
+function o5(){
+    document.getElementById("resultados").innerHTML += 5 ;
+    
+}
+function o6(){
+    document.getElementById("resultados").innerHTML += 6 ;
+    
+}
+function o7(){
+    document.getElementById("resultados").innerHTML += 7 ;
+    
+}
+function o8(){
+    document.getElementById("resultados").innerHTML += 8 ;
+    
+}
+function o9(){
+    document.getElementById("resultados").innerHTML += 9 ;
+    
+}
+function o0(){
+    document.getElementById("resultados").innerHTML += 0;
+    
+}
 let contadorclick = 0;
 let op1 = "";
 let op2= "";
@@ -58,7 +90,7 @@ function sumar2(){
     if(contadorclick == 1){
             op1 = screen;
             console.log(op1);
-    
+            document.getElementById("resultados").innerHTML = null;
     }
     else if(contadorclick === 2 ){
         let screen =  document.getElementById("resultados").innerHTML;
@@ -71,23 +103,30 @@ function sumar2(){
     else{ "f"}
     }
     
+function del (){
+    let screen =  document.getElementById("resultados").innerHTML;
+    document.getElementById("resultados").innerHTML = screen.slice(0, -1);
+}
 
+contadorclickigual = 0;
 
 function igual(){
+    contadorclickigual++;
     let screen = document.getElementById("resultados").innerHTML;
     console.log(parseInt(op1));
-    if(contadorclick == 1){
+    if(contadorclick == 1 ){
         let screen =  document.getElementById("resultados").innerHTML;
         op2 = screen;
         let igual =   parseInt(op1) + parseInt(op2);
         console.log(igual);
+        document.getElementById("resultados").innerHTML = igual;
+
 
     }
     
+    
     else{
-        op2 = screen;
-        let igual =   parseInt(op1) + parseInt(op2);
-        console.log(igual);
+
     };
 
     let igual =   parseInt(op1) + parseInt(op2);
