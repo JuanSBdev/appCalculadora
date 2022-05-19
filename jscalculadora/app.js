@@ -91,11 +91,16 @@ function sumar2(){
             op1 = screen;
             console.log(op1);
             document.getElementById("resultados").innerHTML = null;
+            document.getElementById("sumador").innerHTML = "=";
+            
     }
     else if(contadorclick === 2 ){
         let screen =  document.getElementById("resultados").innerHTML;
         op2 = screen;
         console.log(op2);
+        let igual =   parseInt(op1) + parseInt(op2);
+        document.getElementById("resultados").innerHTML = igual;
+        
     }
     else if(contadorclick >= 3){
         alert ("Solo se permiten dos factores")
@@ -108,9 +113,84 @@ function del (){
     document.getElementById("resultados").innerHTML = screen.slice(0, -1);
 }
 
-contadorclickigual = 0;
+contadorclickdiv = 0;
+function dividir2(){
+    contadorclickdiv++;
+    let screen =  document.getElementById("resultados").innerHTML;
+    console.log(screen);
+    if(contadorclickdiv == 1){
+            op1 = screen;
+            console.log(op1);
+            document.getElementById("resultados").innerHTML = null;
+            document.getElementById("divisor").innerHTML = "=";
+            
+    }
+    else if(contadorclickdiv === 2 ){
+        let screen =  document.getElementById("resultados").innerHTML;
+        op2 = screen;
+        console.log(op2);
+        let igual =   parseInt(op1) / parseInt(op2);
+        document.getElementById("resultados").innerHTML = igual;
+        
+    }
+    else if(contadorclick >= 3){
+        alert ("Solo se permiten dos factores")
+    }
+    else{ "f"}
+}
+contadorclickres = 0;
 
-function igual(){
+function restar2(){
+    contadorclickres++;
+    let screen =  document.getElementById("resultados").innerHTML;
+    console.log(screen);
+    if(contadorclickres == 1){
+            op1 = screen;
+            console.log(op1);
+            document.getElementById("resultados").innerHTML = null;
+            document.getElementById("restar").innerHTML = "=";
+            
+    }
+    else if(contadorclickres === 2 ){
+        let screen =  document.getElementById("resultados").innerHTML;
+        op2 = screen;
+        console.log(op2);
+        let igual =   parseInt(op1) - parseInt(op2);
+        document.getElementById("resultados").innerHTML = igual;
+        
+    }
+    else if(contadorclick >= 3){
+        alert ("Solo se permiten dos factores")
+    }
+    else{ "f"}
+}
+contadorclickmul = 0;
+
+function multiplicar2(){
+    contadorclickmul++;
+    let screen =  document.getElementById("resultados").innerHTML;
+    console.log(screen);
+    if(contadorclickmul == 1){
+            op1 = screen;
+            console.log(op1);
+            document.getElementById("resultados").innerHTML = null;
+            document.getElementById("multiplica").innerHTML = "=";
+            
+    }
+    else if(contadorclickmul === 2 ){
+        let screen =  document.getElementById("resultados").innerHTML;
+        op2 = screen;
+        console.log(op2);
+        let igual =   parseInt(op1) * parseInt(op2);
+        document.getElementById("resultados").innerHTML = igual;
+        
+    }
+    else if(contadorclick >= 3){
+        alert ("Solo se permiten dos factores")
+    }
+    else{ "f"}
+}
+/* function igual(){
     contadorclickigual++;
     let screen = document.getElementById("resultados").innerHTML;
     console.log(parseInt(op1));
@@ -132,12 +212,21 @@ function igual(){
     let igual =   parseInt(op1) + parseInt(op2);
     screen = igual;
    console.log(igual);
-}
+}*/
 
-function dividir2(){
+    /*
+    function dividir(){
+        let forma1 = document.getElementById('forma');
+        let operando1 = forma1['operandoA'];
+        let operando2 = forma1['operandoB'];
+        let resultado3 = parseInt(operando1.value) / parseInt(operando2.value);
+        document.getElementById('resultados').innerHTML =  ` r: ${resultado3}`
 
-}
-    /*function sumar(){
+     }
+
+
+
+    function sumar(){
         let forma1 = document.getElementById('resultados');
         let operando1 =forma1["1"];
         let operando2 = 3;
