@@ -133,6 +133,10 @@ function igual(){
     screen = igual;
    console.log(igual);
 }
+
+function dividir2(){
+
+}
     /*function sumar(){
         let forma1 = document.getElementById('resultados');
         let operando1 =forma1["1"];

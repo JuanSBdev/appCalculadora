@@ -11,7 +11,7 @@
   <body>
     <div class="mobile container-fluid ">
     <div class=''>
-      <h1>Calculadora Mobile</h1>
+      <h1>Calculadora</h1>
         <form id="forma" class="container-fluid row row-cols-1 row-cols-md-2" action="">
           <div class="col-12">
             <h3 class="row justify-content-center"  >Operando A1</h3>
@@ -38,9 +38,9 @@
   <div id="resultado" class="w-100" style="font-size:9rem; overflow: hidden;"></div>
 
       <div class="calculos container-fluid col" id="calculos">
-        <div class=" row screen w-100 py-4 px-3 mx-2 my-4" id="resultados" >
+        <div class=" row screen  py-4 px-3 mx-0 my-4 " id="resultados" >
         </div>
-        <div class="buttons row row-cols-3 mx-1">
+        <div class="buttons row row-cols-3 mx-0 mx-7 justify-content-center">
           <input type="button" class="col-4 mx-1 my-1 btn btn-dark" value="1" id="numeroo" onclick="o1()">
           <input type="button" class="col-3 mx-1 my-1 btn btn-dark" value="2" id="numeroo" onclick="o2()">
           <input type="button" class="col-4 mx-1 my-1 btn btn-dark" value="3" id="numeroo" onclick="o3()">
@@ -50,7 +50,7 @@
           <input type="button" class="col-4 mx-1 my-1 btn btn-dark" value="7" id="numeroo" onclick="o7()">
           <input type="button" class="col-3 mx-1 my-1 btn btn-dark" value="8" id="numeroo" onclick="o8()">
           <input type="button" class="col-4 mx-1 my-1 btn btn-dark" value="9" id="numeroo" onclick="o9()">
-          <button class="col-2 mx-1 my-1 btn  btn-disabled">Dividir</button>
+          <button class="col-2 mx-1 my-1 btn  btn-disabled"onclick="dividir2()">Dividir</button>
           <input type="button" value="restar" class="btn btn-disabled col-2 my-1">
           <input type="button" class="col-3 mx-1 my-1 btn btn-dark" value="0" id="numeroo" onclick="o0()">
           <button class="col-4 mx-1 my-1 btn btn-warning" onclick="sumar2()" ondblclick="sumar3()">+</button>
