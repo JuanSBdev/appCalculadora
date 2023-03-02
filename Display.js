@@ -1,5 +1,6 @@
 class Display {
     constructor(displayValorAnterior, displayValorActual) {
+        
         this.displayValorActual = displayValorActual;
         this.displayValorAnterior = displayValorAnterior;
         this.calculador = new Calculadora();
@@ -12,7 +13,9 @@ class Display {
             multiplicar: 'x',
             restar: '-', 
         }
+        
     }
+    
 
     borrar() {
         this.valorActual = this.valorActual.toString().slice(0,-1);
@@ -43,6 +46,7 @@ class Display {
     imprimirValores() {
         this.displayValorActual.textContent = this.valorActual;
         this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ''}`;
+       
     }
 
     calcular() {
@@ -51,5 +55,9 @@ class Display {
 
         if( isNaN(valorActual)  || isNaN(valorAnterior) ) return
         this.valorActual = this.calculador[this.tipoOperacion](valorAnterior, valorActual);
+        
+        if(this.valorActual = 682444 ){
+            this.valorActual = 'EL Dientes'
+        }
     }
 }
