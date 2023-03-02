@@ -56,8 +56,6 @@ class Display {
         if( isNaN(valorActual)  || isNaN(valorAnterior) ) return
         this.valorActual = this.calculador[this.tipoOperacion](valorAnterior, valorActual);
         
-        if(this.valorActual = 682444 ){
-            this.valorActual = 'EL Dientes'
-        }
+       
     }
 }
