@@ -35,7 +35,12 @@ button {
     background-color: #00916e;
     box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
 }
-
+#borra{
+    background-color: rgba(228, 63, 13, 0.904);
+}
+#borra:active {
+    background-color: #8b2018;
+}
 button:active {
     background-color: #006f54;
 }
